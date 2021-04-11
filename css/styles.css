@@ -1,0 +1,23 @@
+/*----- Imports -----*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --bgColor: #fff;
+    /*--- Añadir variables aqui ---*/
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+/*----- Section starting -----*/
+
+    /*--- Añadir estilos aqui ---*/
+
+/*----- Section ending -----*/
