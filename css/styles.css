@@ -1,9 +1,8 @@
 /*----- Imports -----*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 
 :root{
     --bgColor: #fff;
-    --font: 'Open Sans', sans-serif;
     /*--- Añadir variables aqui ---*/
 }
 
@@ -11,15 +10,67 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font);
 }
 
 body{
     background-color: var(--bgColor);
 }
 
-/*----- Section starting -----*/
+/*----- Header starting -----*/
 
-    /*--- Añadir estilos aqui ---*/
+header nav .ad{
+    background-color: black;
+    display: flex;
+    justify-content: center;    
+}
 
-/*----- Section ending -----*/
+header nav .ad a{
+    text-decoration: none;
+    color: white;
+    font-size: 9pt;
+    margin: 7px 0;
+    font-family: 'PT Sans', sans-serif;
+    border-bottom: 1px solid transparent;
+}
+
+header nav .ad a:hover{
+    border-bottom: 1px solid white;
+}
+
+header nav .navbar{
+    background-color: turquoise;
+    display: flex;
+}
+
+/*header nav .navbar*/
+
+header nav .navbar .logo{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    position: relative;
+    left: 35px;
+}
+
+header nav .navbar .logo img{
+    width: 100%;
+}
+
+header nav .navbar .links{
+    background-color: yellowgreen;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav .navbar .links .links-info{
+    background-color: red;
+    width: 100%;
+}
+
+header nav .navbar .links .links-info a{
+    text-decoration: none;
+    color: black;
+}
+
+/*----- Header ending -----*/
