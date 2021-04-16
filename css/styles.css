@@ -1,10 +1,14 @@
-/*----- Imports -----*/
+/*----- Promo Imports -----*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /*promo font*/
+/*----- Promo Imports -----*/
+
 
 :root{
-    --bgColor: #fff;
-    --font: 'Open Sans', sans-serif;
-    /*--- Añadir variables aqui ---*/
+    /*----- Promo Variables -----*/
+    --promoColor: #eeff41;
+    --promoFont: 'Poppins', sans-serif;
+    /*----- Promo Variables -----*/
 }
 
 *{
@@ -18,8 +22,60 @@ body{
     background-color: var(--bgColor);
 }
 
-/*----- Section starting -----*/
+/*----- Promo starting -----*/
 
-    /*--- Añadir estilos aqui ---*/
+.promo{
+    width: 100%;
+    background-color: var(--promoColor);
+    display: flex;
+    justify-content: center;
 
-/*----- Section ending -----*/
+    padding: 30px;
+}
+
+.promo .text-promo{
+    width: 50%;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: var(--font);
+    font-weight: bolder;
+    padding-bottom: 15px;
+    line-height: 1;
+}
+
+.promo .text-promo h1{
+    font-size: 23pt;
+    width: 70%;
+    font-family: var(--promoFont);
+    font-weight: bolder;
+}
+
+.promo .btn-promo{
+    width: 50%;
+    margin: 5px 20px;
+}
+
+.promo .btn-promo .btn-container{
+    width: 230px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.promo .btn-promo .btn-container button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 11pt;
+    font-family: var(--promoFont);
+    position: relative;
+    top: -3px;
+    left: -3px;
+}
+
+.promo .btn-promo .btn-container button:hover{
+    color: gray;
+}
+/*----- Promo ending -----*/
