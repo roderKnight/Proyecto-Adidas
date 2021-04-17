@@ -29,7 +29,6 @@ body{
     background-color: var(--promoColor);
     display: flex;
     justify-content: center;
-
     padding: 30px;
 }
 
@@ -68,14 +67,16 @@ body{
     border: none;
     background-color: black;
     color: white;
-    font-size: 11pt;
+    font-size: 10pt;
     font-family: var(--promoFont);
     position: relative;
     top: -3px;
     left: -3px;
+    letter-spacing: 2px;
 }
 
 .promo .btn-promo .btn-container button:hover{
     color: gray;
+    cursor: pointer;
 }
 /*----- Promo ending -----*/
