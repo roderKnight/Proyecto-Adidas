@@ -1,15 +1,17 @@
-/*----- Imports -----*/
+/*----- Imports Header -----*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); /* info links navbar*/
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /* links products*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* promo title*/
+/*----- Imports Header -----*/
 
 :root{
-    --bgColor: #e22;
-    /*--- Añadir variables aqui ---*/
+    --bgColor: #fff;
+    /*--- Variables Header ---*/
     --fontNavInfo: 'Montserrat', sans-serif;
     --fontNavProducts: 'Lato', sans-serif;
     --fontPromo: 'Poppins', sans-serif;
+    /*--- Variables Header ---*/
 }
 
 *{
@@ -51,7 +53,6 @@ header nav .navbar{
 
 header nav .navbar .logo-container{
     width: 30%;
-    /*background-color: yellow;*/
 }
 
 header nav .navbar .logo-container .logo-img{
@@ -65,7 +66,6 @@ header nav .navbar .logo-container .logo-img img{
 }
 
 header nav .navbar .links-container{
-    /*background-color: yellowgreen;*/
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -230,5 +230,3 @@ header .hero-banner .promo-product .button-container button:hover{
 }
 
 /*----- Header ending -----*/
-
-/*https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp*/
