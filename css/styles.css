@@ -1,25 +1,232 @@
-/*----- Imports -----*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*----- Imports Header -----*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); /* info links navbar*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /* links products*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* promo title*/
+/*----- Imports Header -----*/
 
 :root{
     --bgColor: #fff;
-    --font: 'Open Sans', sans-serif;
-    /*--- Añadir variables aqui ---*/
+    /*--- Variables Header ---*/
+    --fontNavInfo: 'Montserrat', sans-serif;
+    --fontNavProducts: 'Lato', sans-serif;
+    --fontPromo: 'Poppins', sans-serif;
+    /*--- Variables Header ---*/
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--font);
 }
 
 body{
     background-color: var(--bgColor);
 }
 
-/*----- Section starting -----*/
+/*----- Header starting -----*/
 
-    /*--- Añadir estilos aqui ---*/
+header nav .ad{
+    background-color: black;
+    display: flex;
+    justify-content: center;    
+}
 
-/*----- Section ending -----*/
+header nav .ad a{
+    text-decoration: none;
+    color: white;
+    font-size: 9pt;
+    margin: 7px 0;
+    font-family: 'PT Sans', sans-serif;
+    border-bottom: 1px solid transparent;
+    letter-spacing: 2px;
+}
+
+header nav .ad a:hover{
+    border-bottom: 1px solid white;
+}
+
+header nav .navbar{
+    background-color: white;
+    display: flex;
+}
+
+header nav .navbar .logo-container{
+    width: 30%;
+}
+
+header nav .navbar .logo-container .logo-img{
+    width: 90px;
+    height: 85px;
+    margin: 0 30px;
+}
+
+header nav .navbar .logo-container .logo-img img{
+    width: 100%;
+}
+
+header nav .navbar .links-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav .navbar .links-container .links-info{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px 35px;
+}
+
+header nav .navbar .links-container .links-info a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+    font-size: 9pt;
+    font-family: var(--fontNavInfo);
+    font-weight: bold;
+}
+
+header nav .navbar .links-container .viable-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+header nav .navbar .links-container .viable-links .links-offers{
+    width: 50%;
+}
+
+header nav .navbar .links-container .viable-links .links-offers a{
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: var(--fontNavProducts);
+    font-size: 10.5pt;
+}
+
+header nav .navbar .links-container .viable-links .links-offers .bold-link{
+    font-weight: bold;
+}
+
+header nav .navbar .links-container .viable-links .icon-links{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .navbar .links-container .viable-links .icon-links .input-searcher{
+    margin: 0px 10px;
+    width: 160px;
+}
+
+header nav .navbar .links-container .viable-links .icon-links .input-searcher input{
+    height: 30px;
+    padding: 6px 10px;
+    margin: 0px;
+    float: left;
+    width: 80%;
+    border-radius: 3px;
+    border: none;
+    border-right: transparent;
+    background-color: #cfd8dc;
+}
+
+header nav .navbar .links-container .viable-links .icon-links .input-searcher input:focus{
+    border: none;
+    outline: none;
+}
+
+header nav .navbar .links-container .viable-links .icon-links .input-searcher button{
+    margin: 0px;
+    height: 30px;
+    float: left;
+    width: 20%;
+    border-radius: 3px;
+    border: none;
+    border-left: transparent;
+    background-color: #cfd8dc;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    left: -3px;
+}
+
+header nav .navbar .links-container .viable-links .icon-links .input-searcher button:hover{
+    cursor: pointer;
+}
+
+header nav .navbar .links-container .viable-links .icon-links .link-action{
+    display: flex;
+    margin: 0px 10px;
+}
+
+header nav .navbar .links-container .viable-links .icon-links .link-action a{
+    color: black;
+    margin: 0 20px;
+    font-size: 15pt;
+}
+
+header .hero-banner .img-container{
+    width: 100%;
+    height: 85vh;
+}
+
+header .hero-banner .img-container img{
+    width: 100%;
+    height: 100%;
+}
+
+header .hero-banner .promo-product{
+    position: absolute;
+    top: 40%;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .hero-banner .promo-product h1{
+    font-size: 30pt;
+    width: 70%;
+    padding: 10px 0;
+    line-height: .9;
+    font-family: var(--fontPromo);
+    font-weight: bolder;
+    color: white;
+}
+
+header .hero-banner .promo-product span{
+    padding: 15px 0;
+    font-size: 12pt;
+    font-family: var(--fontNavInfo);
+    font-weight: bold;
+    color: white;
+}
+
+header .hero-banner .promo-product .button-container{
+    width: 30%;
+    border: 1px solid white;
+    margin: 3px;
+}
+
+header .hero-banner .promo-product .button-container button{
+    margin: 0 auto;
+    width: 99%;
+    padding: 20px 0;
+    border: none;
+    position: relative;
+    top: -3px;
+    left: -3px;
+    font-weight: bolder;
+    font-family: var(--fontNavProducts);
+}
+
+header .hero-banner .promo-product .button-container button:hover{
+    color: gray;
+}
+
+/*----- Header ending -----*/
