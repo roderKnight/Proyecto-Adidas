@@ -12,6 +12,9 @@
     --fontNavProducts: 'Lato', sans-serif;
     --fontPromo: 'Poppins', sans-serif;
     /*--- Variables Header ---*/
+    --font: 'Open Sans', sans-serif;
+    /*--- Añadir variables aqui ---*/
+    --bg-color-galery: #EBEFF1;
 }
 
 *{
@@ -22,6 +25,7 @@
 
 body{
     background-color: var(--bgColor);
+    line-height: 22px;
 }
 
 /*----- Header starting -----*/
@@ -230,3 +234,244 @@ header .hero-banner .promo-product .button-container button:hover{
 }
 
 /*----- Header ending -----*/
+
+/*--- Añadir estilos aqui ---*/
+
+.galery {
+    margin: 40px 0;
+}
+
+.row {
+    padding: 0 50px;
+    max-width: 1700px;
+    margin: 0 auto;
+    margin-top: 30px;    
+}
+
+.row:last-child {
+    margin-bottom: 300px;
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.heading-secondary {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.galery__links--first {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.galery__links--first a {
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    transition: all 300ms;
+}
+
+.galery__links--first a:not(:last-child){
+    margin-right: 5px;
+}
+
+.galery__links--first a:hover {
+    color: #888;
+}
+
+.galery__links--first i {
+    margin-left: 8px;
+    font-size: 10px;
+}
+
+.galery__products {
+    display: flex;
+}
+
+.card--first {
+    height: 240px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--bg-color-galery);
+    padding-bottom: 25px;
+}
+
+.card--first:hover {
+    cursor: pointer;
+}
+
+.card--first:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card--img {
+    width: 60%;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.card--img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card--link a {
+    display: inline-block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1.3px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px;
+    transition: all .3s;
+}
+
+.card--link a:hover {
+    background-color: black;
+    color: white;
+}
+
+.u-text-left {
+    text-align: left;
+}
+
+.card--minimalist-info {
+    flex-grow: 1;
+    height: 380px;
+    border: 1px solid transparent;
+}
+
+.card--minimalist-info:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card--minimalist-info:hover {
+    border: 1px solid black;
+}
+
+.card--minimalist-info .card--img {
+    width: 100%;
+    height: 250px;
+}
+
+.card--minimalist-info .card--img img {
+    width: 100%;
+}
+
+.card--minimalist-info .card-title {
+    font-size: 12px;
+}
+
+.card--minimalist-info p {
+    margin-left: 10px;
+}
+
+.card--minimalist-info p:first-of-type {
+    padding: 5px 0;
+    color: #777;
+    font-size: 12px;
+}
+
+.card--minimalist-info p:not(:first-of-type){
+    padding: 2px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.card--third {
+    flex-grow: 1;
+    height: 555px;
+    overflow: hidden;
+}
+
+.card--third .card--img {
+    width: 100%;
+    height: 320px;
+}
+
+.card--third .card--img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card--third:not(:last-child) {
+    margin-right: 15px;
+}
+
+.row:nth-child(3) {
+    margin-top: 120px;
+}
+
+.card--third .card-title {
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    height: 50px;
+}
+
+.card--third .card-name {
+    font-size: 14px;
+    height: 120px;
+}
+
+.row:nth-child(4) {
+    margin-top: 100px;
+}
+
+.card--5 {
+    flex-grow: 1;
+    position: relative;
+}
+
+.card--5:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card--5 .card--img-5 {
+    height: 300px;
+    z-index: -1;
+}
+
+.card--img-5 img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.card__content {
+    position: absolute;
+    background-color: white;
+    width: 95%;
+    right: 0;
+    margin-top: -20px;
+    padding: 0 20px;
+    padding-top: 30px;
+    z-index: 10;
+}
+
+.card__content .card__title {
+    font-size: 15px;
+}
+
+.card__content p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+/*----- Section ending -----*/
+
+
