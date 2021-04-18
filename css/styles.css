@@ -1,4 +1,3 @@
-
 /*----- Imports -----*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /*----- Fuentes-H3 -----*/
@@ -9,6 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /* links products*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* promo title*/
 /*----- Imports Header -----*/
+/*----- Promo Imports -----*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /*promo font*/
+/*----- Promo Imports -----*/
 
 :root{
     --bgColor: #fff;
@@ -20,6 +23,10 @@
     --font: 'Open Sans', sans-serif;
     /*--- Añadir variables aqui ---*/
     --bg-color-galery: #EBEFF1;
+    /*----- Promo Variables -----*/
+    --promoColor: #eeff41;
+    --promoFont: 'Poppins', sans-serif;
+    /*----- Promo Variables -----*/
 }
 
 *{
@@ -275,6 +282,7 @@ header .hero-banner .promo-product .button-container button:hover{
     margin-bottom: 80px;
 }
 
+
 .galery__links--first a {
     padding: 10px;
     border: 1px solid black;
@@ -482,26 +490,84 @@ header .hero-banner .promo-product .button-container button:hover{
 
 /*--- H3 - ARTÍCULOS EN 2 COLUMNAS (Roberto) ---*/
 
-    section.Seccion-H3-rob
-    {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 50px;
-        background-color: #EEEEEE;
-        padding-left:15em;
-        padding-right: 15em;
-        padding-top: 5em;
-        padding-bottom: 5em;
-    }
-    h2.Titulo-H3-rob
-    {
-        font-family: 'Roboto Mono', monospace;
-        margin-bottom: 1em;
-        font-size: .9em;
-    }
-    p.Parrafo-H3-rob
-    {
-        font-size: .9em;
-    }
+section.Seccion-H3-rob
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    background-color: #EEEEEE;
+    padding-left:15em;
+    padding-right: 15em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+h2.Titulo-H3-rob
+{
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 1em;
+    font-size: .9em;
+}
+p.Parrafo-H3-rob
+{
+    font-size: .9em;
+}
 
-    /*--- H3 - ARTÍCULOS EN 2 COLUMNAS (Roberto) ---*/
+/*--- H3 - ARTÍCULOS EN 2 COLUMNAS (Roberto) ---*/
+/*----- Promo starting -----*/
+
+.promo{
+    width: 100%;
+    background-color: var(--promoColor);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.promo .text-promo{
+    width: 50%;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: var(--font);
+    font-weight: bolder;
+    padding-bottom: 15px;
+    line-height: 1;
+}
+
+.promo .text-promo h1{
+    font-size: 23pt;
+    width: 70%;
+    font-family: var(--promoFont);
+    font-weight: bolder;
+}
+
+.promo .btn-promo{
+    width: 50%;
+    margin: 5px 20px;
+}
+
+.promo .btn-promo .btn-container{
+    width: 230px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.promo .btn-promo .btn-container button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 10pt;
+    font-family: var(--promoFont);
+    position: relative;
+    top: -3px;
+    left: -3px;
+    letter-spacing: 2px;
+}
+
+.promo .btn-promo .btn-container button:hover{
+    color: gray;
+    cursor: pointer;
+}
+/*----- Promo ending -----*/
