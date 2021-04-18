@@ -1,5 +1,7 @@
 /*----- Imports -----*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*----- Fuentes-H4 -----*/
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&family=Roboto+Mono&display=swap');
 
 :root{
     --bgColor: #fff;
@@ -21,5 +23,70 @@ body{
 /*----- Section starting -----*/
 
     /*--- Añadir estilos aqui ---*/
+    /*--- H4 - FOOTER 1 (Roberto) ---*/
+
+    section.Seccion-H4-rob
+    {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 20px;
+        padding-left:17em;
+        padding-right: 17em;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    a.clickable-H4-rob
+    {
+        text-decoration: none;
+        color: black;
+    }
+    h2.Titulo-H4-rob
+    {
+        font-family: 'Varela Round', sans-serif;
+        margin-bottom: 1.7em;
+        font-size: 1em;
+    }
+    p.Parrafo-H4-rob
+    {
+        font-size: .8em;
+    }
+    span.br-H4-rob
+    {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /*--- H4 - FOOTER 1 (Roberto) ---*/
+
+    /*--- H4 - FOOTER 2 (Roberto) ---*/
+
+    section.Seccion2-H4-rob
+    {
+        display: flex;
+        flex: auto;
+        padding-left:17em;
+        padding-right: 17em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background-color: rgb(58, 58, 58);
+    }
+
+    div.Div2-H4-rob
+    {
+        display: flex;
+        flex: auto;
+        grid-gap: 3em;
+    }
+
+    h2.Titulo2-H4-rob
+    {
+        font-family: 'Varela Round', sans-serif;
+        font-size: .7em;
+        color: rgb(167, 166, 166);
+    }
+
+    /*--- H4 - FOOTER 2 (Roberto) ---*/
+
+
 
 /*----- Section ending -----*/
