@@ -1,3 +1,8 @@
+
+/*----- Imports -----*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*----- Fuentes-H3 -----*/
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;400&family=Roboto+Mono&display=swap');
 /*----- Imports Header -----*/
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); /* info links navbar*/
@@ -475,3 +480,28 @@ header .hero-banner .promo-product .button-container button:hover{
 /*----- Section ending -----*/
 
 
+/*--- H3 - ARTÍCULOS EN 2 COLUMNAS (Roberto) ---*/
+
+    section.Seccion-H3-rob
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        background-color: #EEEEEE;
+        padding-left:15em;
+        padding-right: 15em;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    h2.Titulo-H3-rob
+    {
+        font-family: 'Roboto Mono', monospace;
+        margin-bottom: 1em;
+        font-size: .9em;
+    }
+    p.Parrafo-H3-rob
+    {
+        font-size: .9em;
+    }
+
+    /*--- H3 - ARTÍCULOS EN 2 COLUMNAS (Roberto) ---*/
