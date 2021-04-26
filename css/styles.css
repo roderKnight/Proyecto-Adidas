@@ -513,6 +513,7 @@ h2.Titulo-H3-rob
 p.Parrafo-H3-rob
 {
     font-size: .9em;
+    font-family: var(--font);
 }
 
 /*--- H3 - ARTÍCULOS EN 2 COLUMNAS (Roberto) ---*/
@@ -602,6 +603,7 @@ p.Parrafo-H3-rob
     p.Parrafo-H4-rob
     {
         font-size: .8em;
+        font-family: var(--font);
     }
     span.br-H4-rob
     {
@@ -634,7 +636,7 @@ p.Parrafo-H3-rob
     h2.Titulo2-H4-rob
     {
         font-family: 'Varela Round', sans-serif;
-        font-size: .7em;
+        font-size: .65em;
         color: rgb(167, 166, 166);
     }
 
